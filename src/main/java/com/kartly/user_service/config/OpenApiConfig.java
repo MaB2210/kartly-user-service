@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI kartlyOpenApi() {
+    public OpenAPI userServiceOpenApi() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Kartly API")
-                        .description("REST API for the Kartly e-commerce order management platform")
+                        .title("User Service API")
+                        .description("Authentication and user management microservice for Kartly")
                         .version("v1.0"));
     }
 }
